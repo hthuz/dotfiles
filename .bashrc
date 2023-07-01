@@ -19,7 +19,6 @@ ISWSL=0
 alias cdv='cd ~/.config/nvim'
 alias cdd='cd ~/.dotfiles'
 alias src='source ~/.bashrc'
-alias dd='fasd'
 
 
 alias gitl='git log --graph --all --oneline'
@@ -32,13 +31,13 @@ alias n="nvim"
 alias nv="nvim"
 alias v='nvim'
 alias vi='nvim'
+alias nvimtime='nvim --startuptime /dev/stdout +qa'
+alias vimtime='vim --startuptime /dev/stdout +qa'
 
 alias ra='ranger'
 
 export GIT_TERMINAL_PROMPT=1
 export EDITOR=nvim
-
-
 export FZF_COMPLETION_TRIGGER='**'
 export FZF_COMPLETION_OPTS='--border --info=inline'
 
@@ -68,8 +67,13 @@ if [[ ISWSL -eq 1 ]]
 then
 
     alias cda="cd /mnt/d/antipattern-research"
+    alias cdsite="cd /mnt/d/antipattern-research/site/smellanalyzer"
+    alias cdsrc="cd /mnt/d/antipattern-research/src/apps/project"
+    alias cdpj="cd /mnt/d/antipattern-research/src/apps/project"
+    alias cddoc="cd /mnt/d/antipattern-research/src/apps/doc"
 
 
+    alias arcan="java --add-opens java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens java.base/sun.reflect.generics.reflectiveObjects=ALL-UNNAMED --add-opens java.base/sun.reflect.annotation=ALL-UNNAMED -jar /mnt/d/arcan-2.5.0-cli/Arcan2-cli-2.5.0-RELEASE-jar-with-dependencies.jar"
 fi
 
 

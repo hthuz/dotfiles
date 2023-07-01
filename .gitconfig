@@ -1,0 +1,13 @@
+[user]
+    email = hanggang.20@intl.zju.edu.cn
+    name = hthuz
+
+[core]
+    editor = nvim
+
+[alias]
+    st = status
+    ad = add
+    cm = commit -m 
+    f = fetch
+    l = log --graph --all --oneline

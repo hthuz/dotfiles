@@ -35,6 +35,7 @@ alias nvimtime='nvim --startuptime /dev/stdout +qa'
 alias vimtime='vim --startuptime /dev/stdout +qa'
 
 alias ra='ranger'
+alias nf='neofetch'
 
 export GIT_TERMINAL_PROMPT=1
 export EDITOR=nvim

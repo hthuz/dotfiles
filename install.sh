@@ -5,6 +5,7 @@ DIR=$( cd -- "$(dirname -- "${BASH_SOURCE[0]})" )" &> /dev/null && pwd )
 ln -fsnv "${DIR}/.gitconfig" ~
 ln -fsnv "${DIR}/.bashrc" ~
 ln -fsnv "${DIR}/.bash_profile" ~
+ln -fsnv "${DIR}/.keys.conf" ~
 
 
 FCITX5_PATH="config/fcitx5/conf"

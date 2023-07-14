@@ -16,6 +16,9 @@ ISWSL=0
 
 
 # Commn Config
+#
+alias cls='colorls'
+alias cl='colorls'
 alias cdv='cd ~/.config/nvim'
 alias cdd='cd ~/.dotfiles'
 alias src='source ~/.bashrc'
@@ -47,7 +50,9 @@ export FZF_COMPLETION_OPTS='--border --info=inline'
 if [[ ISWSL -eq 0 ]] 
 then
     alias cdpixel='cd ~/.local/lib/python3.11/site-packages/theme_pixel'
-    alias ed='cd ~/.config/chadwm'
+    alias cdc='cd ~/.config/chadwm/chadwm'
+    alias cda='cd ~/antipattern-research'
+    alias cdsite='cd ~/antipattern-research/smellanalyzer/'
 
     alias onmo='xrandr --output eDP-1 --auto'
     alias vii='pamixer -i 5'
@@ -76,9 +81,6 @@ then
 
     alias arcan="java --add-opens java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens java.base/sun.reflect.generics.reflectiveObjects=ALL-UNNAMED --add-opens java.base/sun.reflect.annotation=ALL-UNNAMED -jar /mnt/d/arcan-2.5.0-cli/Arcan2-cli-2.5.0-RELEASE-jar-with-dependencies.jar"
 fi
-
-
-
 
 
 

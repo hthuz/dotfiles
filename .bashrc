@@ -53,6 +53,8 @@ then
     alias cdc='cd ~/.config/chadwm/chadwm'
     alias cda='cd ~/antipattern-research'
     alias cdsite='cd ~/antipattern-research/smellanalyzer/'
+    alias cdsrc='cd ~/antipattern-research/smellanalyzer/project/backend'
+    alias keys='setxkbmap -option caps:swapescape'
 
     alias onmo='xrandr --output eDP-1 --auto'
     alias vii='pamixer -i 5'
@@ -62,7 +64,7 @@ then
 
     alias vpn='sudo openconnect -u hz66 --passwd-on-stdin vpn.cites.illinois.edu'
     alias screenkey='screenkey -s small --opacity 0.5 -t 1 &'
-    alias edge='microsoft-edge-dev'
+    alias edge='microsoft-edge-stable'
     alias quartus='~/intelFPGA_lite/18.1/quartus/bin/quartus'
 
     export QSYS_ROOTDIR="/home/autentico/intelFPGA_lite/18.1/quartus/sopc_builder/bin"

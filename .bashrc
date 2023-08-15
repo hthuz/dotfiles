@@ -8,7 +8,7 @@
 alias ls='ls --color=auto'
 alias l='ls --color=auto'
 alias grep='grep --color=auto'
-PS1='[\u@\h \W]\$ '
+# PS1='[\u@\h \W]\$ '
 
 KERNEL=$(uname -r)
 ISWSL=0
@@ -61,6 +61,7 @@ then
     alias vdd='pamixer -d 5'
     alias mute='pamixer -m'
     alias unmute='pamixer -u'
+    alias xclip='xclip -selection clipboard'
 
     alias vpn='sudo openconnect -u hz66 --passwd-on-stdin vpn.cites.illinois.edu'
     alias screenkey='screenkey -s small --opacity 0.5 -t 1 &'

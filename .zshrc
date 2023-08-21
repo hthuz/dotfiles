@@ -1,22 +1,19 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 
 source ~/.bashrc
 alias src="source ~/.zshrc"
-PS1='[autentico@arch %1d]$'
-source ~/.zplug/init.zsh
+# PS1='[autentico@arch %1d]$ '
 
-zplug "zsh-users/zsh-syntax-highlighting", as:plugin, defer:2
-zplug "zsh-users/zsh-completions", as:plugin, defer:2
-zplug "zsh-users/zsh-autosuggestions", as:plugin, defer:2
-zplug "marlonrichert/zsh-autocomplete", as:plugin, defer:2
-zplug "jeffreytse/zsh-vi-mode", as:plugin, defer:2
+# Installed using pacman
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
-
-# Install plugins if there are plugins that have not been installed
-if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    fi
-fi
-
-zplug load --verbose
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

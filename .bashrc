@@ -86,7 +86,26 @@ then
 fi
 
 
+# This is not a good way to add env var
+# If you source .bashrc multiple times, it will be added for multiple times.
+# export PATH=$PATH:/home/autentico
 
-PATH="$HOME/arch:$PATH"
+# Append "$1" to $PATH when not already in.
+# This function API is accessible to scripts in /etc/profile.d
+append_path () {
+    # If there's no match, do nothing(;;)
+    case ":$PATH:" in
+    # The first case.
+        *:"$1":*)
+            ;;
+    # *): Default pattern case if none of previous patterns match.
+        *)
+    # ${PATH+...}: If PATH is set, it evalutates to value after +
+            PATH="${PATH:+$PATH:}$1"
+    esac
+}
 
+append_path '/home/autentico'
+
+unset -f append_path
 

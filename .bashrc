@@ -107,5 +107,11 @@ append_path () {
 
 append_path '/home/autentico'
 
+# Functions to print $PATH in a nice way
+path() {
+    fpath=$(echo $PATH | sed 's/:/\n/g')
+    echo $fpath
+}
+
 unset -f append_path
 

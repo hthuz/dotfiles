@@ -7,6 +7,7 @@ ln -fsnv "${DIR}/.bashrc" ~
 ln -fsnv "${DIR}/.bash_profile" ~
 ln -fsnv "${DIR}/.keys.conf" ~
 ln -fsnv "${DIR}/.zshrc" ~
+ln -fsnv "${DIR}/.config/neofetch/config.conf" ~/.config/neofetch
 
 
 FCITX5_PATH=".config/fcitx5/conf"

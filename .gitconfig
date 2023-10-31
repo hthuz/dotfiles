@@ -11,3 +11,6 @@
     cm = commit -m 
     f = fetch
     l = log --graph --all --oneline
+    b = branch
+    ch = checkout 
+    cb = checkout -b

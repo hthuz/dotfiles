@@ -55,6 +55,9 @@ then
     alias cdsite='cd ~/antipattern-research/smellanalyzer/'
     alias cdsrc='cd ~/antipattern-research/smellanalyzer/project/backend'
     alias keys='setxkbmap -option caps:swapescape'
+    alias cd438='cd ~/ece438/'
+    alias cd450='cd ~/cs450'
+    alias 391='ssh -p 63916 ta_3200110457@vps.xxcj.net'
 
     alias onmo='xrandr --output eDP-1 --auto'
     alias vii='pamixer -i 5'
@@ -69,6 +72,13 @@ then
     alias quartus='~/intelFPGA_lite/18.1/quartus/bin/quartus'
 
     export QSYS_ROOTDIR="/home/autentico/intelFPGA_lite/18.1/quartus/sopc_builder/bin"
+
+format() {
+    verible-verilog-format --indentation_spaces 4 $1 > $1.bak
+    cp $1.bak $1
+    rm $1.bak
+
+}
 fi
 
 # Wsl Config
@@ -106,6 +116,7 @@ append_path () {
 }
 
 append_path '/home/autentico'
+append_path '/home/autentico/Downloads/FastX3'
 
 # Functions to print $PATH in a nice way
 path() {

@@ -7,10 +7,12 @@
 
 [alias]
     st = status
+    sh = stash
     ad = add
     cm = commit -m 
     f = fetch
     l = log --graph --all --oneline
     b = branch
+    me = merge
     ch = checkout 
     cb = checkout -b

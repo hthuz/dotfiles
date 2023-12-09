@@ -29,7 +29,7 @@ alias gits='git status'
 alias gitb='git branch'
 alias gitc='git checkout'
 
-alias re='nvim /home/autentico/arch/arch.md'
+alias re='nvim ~/arch/arch'
 alias n="nvim"
 alias nv="nvim"
 alias v='nvim'
@@ -57,7 +57,9 @@ then
     alias keys='setxkbmap -option caps:swapescape'
     alias cd438='cd ~/ece438/'
     alias cd450='cd ~/cs450'
+    alias cd408='cd ~/ece408/Project'
     alias 391='ssh -p 63916 ta_3200110457@vps.xxcj.net'
+    alias cds='cd ~/438mp2/MP2/mp2'
 
     alias onmo='xrandr --output eDP-1 --auto'
     alias vii='pamixer -i 5'
@@ -66,7 +68,6 @@ then
     alias unmute='pamixer -u'
     alias xclip='xclip -selection clipboard'
 
-    alias vpn='sudo openconnect -u hz66 --passwd-on-stdin vpn.cites.illinois.edu'
     alias screenkey='screenkey -s small --opacity 0.5 -t 1 &'
     alias edge='microsoft-edge-stable'
     alias quartus='~/intelFPGA_lite/18.1/quartus/bin/quartus'

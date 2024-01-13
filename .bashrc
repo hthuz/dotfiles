@@ -118,6 +118,7 @@ append_path () {
 
 append_path '/home/autentico'
 append_path '/home/autentico/Downloads/FastX3'
+append_path '/home/autentico/.local/bin'
 
 # Functions to print $PATH in a nice way
 path() {

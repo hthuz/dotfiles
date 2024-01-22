@@ -8,6 +8,8 @@ ln -fsnv "${DIR}/.bash_profile" ~
 ln -fsnv "${DIR}/.keys.conf" ~
 ln -fsnv "${DIR}/.zshrc" ~
 ln -fsnv "${DIR}/.config/neofetch/config.conf" ~/.config/neofetch
+ln -fsnv "${DIR}/.config/ranger/rc.conf" ~/.config/ranger
+ln -fsnv "${DIR}/.config/ranger/rifle.conf" ~/.config/ranger
 
 
 FCITX5_PATH=".config/fcitx5/conf"

@@ -29,7 +29,8 @@ alias gits='git status'
 alias gitb='git branch'
 alias gitc='git checkout'
 
-alias re='nvim ~/arch/arch'
+# alias re='nvim ~/arch/arch'
+alias re='~/arch/open_doc'
 alias n="nvim"
 alias nv="nvim"
 alias v='nvim'

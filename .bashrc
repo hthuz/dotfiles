@@ -12,7 +12,7 @@ alias grep='grep --color=auto'
 
 KERNEL=$(uname -r)
 ISWSL=0
-[[ ${KERNEL} =~ .*WSL.* ]] && ISWSL=1
+[[ ${KERNEL} =~ .*icrosoft.* ]] && ISWSL=1
 
 
 # Commn Config
@@ -92,10 +92,19 @@ then
     alias cdsrc="cd /mnt/d/antipattern-research/src/apps/project"
     alias cdpj="cd /mnt/d/antipattern-research/src/apps/project"
     alias cddoc="cd /mnt/d/antipattern-research/src/apps/doc"
+	alias cd448="cd /mnt/d/ECE448sp24/mp5/mp5_code/skeleton/part\ 1"
+	alias coolc="/mnt/d/cs143/bin/coolc"
+	alias spim="/mnt/d/cs143/bin/spim"
 
 
     alias arcan="java --add-opens java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens java.base/sun.reflect.generics.reflectiveObjects=ALL-UNNAMED --add-opens java.base/sun.reflect.annotation=ALL-UNNAMED -jar /mnt/d/arcan-2.5.0-cli/Arcan2-cli-2.5.0-RELEASE-jar-with-dependencies.jar"
+
+
 fi
+
+run() {
+	python mp4.py --train data/brown-training.txt --test data/brown-dev.txt --algorithm $1
+}
 
 
 # This is not a good way to add env var
@@ -126,6 +135,7 @@ path() {
     fpath=$(echo $PATH | sed 's/:/\n/g')
     echo $fpath
 }
+
 
 unset -f append_path
 

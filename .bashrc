@@ -45,6 +45,8 @@ export GIT_TERMINAL_PROMPT=1
 export EDITOR=nvim
 export FZF_COMPLETION_TRIGGER='**'
 export FZF_COMPLETION_OPTS='--border --info=inline'
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
 
 # Linux Config
 

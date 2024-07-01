@@ -11,6 +11,7 @@ alias src="source ~/.zshrc"
 # PS1='[autentico@arch %1d]$ '
 
 # Installed using pacman
+# for powerlevel10k, yay zsh-theme-powerlevel10k-git
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme

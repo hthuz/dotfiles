@@ -63,6 +63,9 @@ then
     alias cd408='cd ~/ece408/Project'
     alias 391='ssh -p 63916 ta_3200110457@vps.xxcj.net'
     alias cds='cd ~/438mp2/MP2/mp2'
+	# alias geth='~/go-ethereum/build/bin/geth'
+	alias geth='~/bsc/build/bin/geth'
+	alias bootnode='~/bsc/build/bin/bootnode'
 
     alias onmo='xrandr --output eDP-1 --auto'
     alias vii='pamixer -i 5'

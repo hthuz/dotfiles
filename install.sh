@@ -7,11 +7,22 @@ ln -fsnv "${DIR}/.bashrc" ~
 ln -fsnv "${DIR}/.bash_profile" ~
 ln -fsnv "${DIR}/.keys.conf" ~
 ln -fsnv "${DIR}/.zshrc" ~
+
+if [[ ! -e ~/.config/neofetch ]]
+then
+	mkdir ~/.config/neofetch
+fi
 ln -fsnv "${DIR}/.config/neofetch/config.conf" ~/.config/neofetch
+
+if [[ ! -e ~/.config/ranger ]]
+then
+	mkdir ~/.config/ranger
+fi
 ln -fsnv "${DIR}/.config/ranger/rc.conf" ~/.config/ranger
 ln -fsnv "${DIR}/.config/ranger/rifle.conf" ~/.config/ranger
 
 
+# to be confirmed
 FCITX5_PATH=".config/fcitx5/conf"
 if [[ -e ~/${FCITX5_PATH} ]]
 then

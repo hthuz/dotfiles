@@ -56,8 +56,9 @@ append_path () {
     esac
 }
 
-append_path '/home/autentico'
-append_path '/home/autentico/.local/bin'
+append_path "$HOME"
+append_path "$HOME/.local/bin"
+append_path "$HOME/.cargo/bin"
 
 # Functions to print $PATH in a nice way
 path() {

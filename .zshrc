@@ -21,3 +21,12 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 
 [ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh
+
+# History config
+export HISTFILE=~/.zsh_history
+export HISTSIZE=10000
+export SAVEHIST=10000
+setopt SHARE_HISTORY
+setopt INC_APPEND_HISTORY
+
+eval "$(lua /usr/share/z.lua/z.lua --init zsh)"

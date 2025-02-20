@@ -14,6 +14,7 @@ alias cls='colorls'
 alias cl='colorls'
 alias cdv='cd ~/.config/nvim'
 alias cdd='cd ~/.dotfiles'
+alias cdk='cd ~/.config/kitty'
 alias src='source ~/.bashrc'
 
 alias gitl='git log --graph --all --oneline'
@@ -29,6 +30,9 @@ alias vi='nvim'
 
 alias ra='ranger'
 alias nf='neofetch'
+alias ff='fastfetch'
+
+alias arcan="java --add-opens java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens java.base/sun.reflect.generics.reflectiveObjects=ALL-UNNAMED --add-opens java.base/sun.reflect.annotation=ALL-UNNAMED -jar $HOME/antipattern/tools/arcan-2.5.0-cli/Arcan2-cli-2.5.0-RELEASE-jar-with-dependencies.jar"
 
 export GIT_TERMINAL_PROMPT=1
 export EDITOR=nvim
@@ -59,6 +63,8 @@ append_path () {
 append_path "$HOME"
 append_path "$HOME/.local/bin"
 append_path "$HOME/.cargo/bin"
+append_path "$HOME/go/bin"
+append_path "$HOME/.local/share/solana/install/active_release/bin"
 
 # Functions to print $PATH in a nice way
 path() {

@@ -8,12 +8,6 @@ ln -fsnv "${DIR}/.bash_profile" ~
 ln -fsnv "${DIR}/.keys.conf" ~
 ln -fsnv "${DIR}/.zshrc" ~
 
-if [[ ! -e ~/.config/neofetch ]]
-then
-	mkdir ~/.config/neofetch
-fi
-ln -fsnv "${DIR}/.config/neofetch/config.conf" ~/.config/neofetch
-
 if [[ ! -e ~/.config/ranger ]]
 then
 	mkdir ~/.config/ranger

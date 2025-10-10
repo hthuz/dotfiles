@@ -29,4 +29,5 @@ export SAVEHIST=10000
 setopt SHARE_HISTORY
 setopt INC_APPEND_HISTORY
 
+# yay -S z.lua
 eval "$(lua /usr/share/z.lua/z.lua --init zsh)"

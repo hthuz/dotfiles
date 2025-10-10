@@ -15,6 +15,11 @@ fi
 ln -fsnv "${DIR}/.config/ranger/rc.conf" ~/.config/ranger
 ln -fsnv "${DIR}/.config/ranger/rifle.conf" ~/.config/ranger
 
+if [[ ! -e ~/.config/kitty ]]
+then
+	mkdir ~/.config/kitty
+fi
+ln -fsnv "${DIR}/.config/kitty/kitty.conf" ~/.config/kitty
 
 # to be confirmed
 FCITX5_PATH=".config/fcitx5/conf"

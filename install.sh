@@ -7,6 +7,7 @@ ln -fsnv "${DIR}/.bashrc" ~
 ln -fsnv "${DIR}/.bash_profile" ~
 ln -fsnv "${DIR}/.keys.conf" ~
 ln -fsnv "${DIR}/.zshrc" ~
+ln -fsnv "${DIR}/.hidden" ~
 
 if [[ ! -e ~/.config/ranger ]]
 then
